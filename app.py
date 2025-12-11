@@ -1,8 +1,3 @@
-"""
-Gradio App for Emoji-based Sentiment Analysis
-Deployable to Hugging Face Spaces
-"""
-
 import gradio as gr
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
@@ -10,7 +5,7 @@ import emoji
 import re
 
 # Load model and tokenizer
-MODEL_PATH = "bert_variant3_custom_dict"  # Your model name on HF
+MODEL_PATH = "tanzeelabbas114/emojibert-sentiment-analysis"  
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 print("Loading model...")
