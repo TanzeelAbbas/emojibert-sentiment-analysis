@@ -39,7 +39,9 @@ python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk
 ```
 
 Create .env file with 
-HF-Token = "your Token"
+```bash
+HF_TOKEN="HuggingFaceTokenGoesHere" 
+```
 
 ### Step 1: Download Dataset
 
